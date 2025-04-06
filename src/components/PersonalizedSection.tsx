@@ -1,8 +1,12 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useAuth } from '@/contexts/AuthContext';
 
 const PersonalizedSection: React.FC = () => {
+  const { user } = useAuth();
+  
   return (
     <section className="bg-dark-section py-16">
       <div className="container-custom text-center">
@@ -10,9 +14,15 @@ const PersonalizedSection: React.FC = () => {
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
           Chat with our AI assistant to discover recipes tailored to your specific health needs
         </p>
-        <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6">
-          Sign Up Now
-        </Button>
+        {!user ? (
+          <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6" asChild>
+            <Link to="/signup">Sign Up Now</Link>
+          </Button>
+        ) : (
+          <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6">
+            Start Chat Now
+          </Button>
+        )}
       </div>
     </section>
   );

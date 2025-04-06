@@ -2,6 +2,7 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useAuth } from '@/contexts/AuthContext';
 
 interface RecipeCardProps {
   title: string;
@@ -18,8 +19,10 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
   cookTime, 
   image 
 }) => {
+  const { user } = useAuth();
+
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative h-48 bg-gray-200">
         {image ? (
           <img 
