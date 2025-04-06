@@ -14,7 +14,6 @@ const FeaturedRecipes: React.FC = () => {
           {recipes.slice(0, 8).map(recipe => (
             <Link to={`/recipe/${recipe.id}`} key={recipe.id}>
               <RecipeCard
-                key={recipe.id}
                 title={recipe.title}
                 description={recipe.description}
                 prepTime={recipe.prepTime}
@@ -25,8 +24,8 @@ const FeaturedRecipes: React.FC = () => {
           ))}
         </div>
         <div className="text-center mt-10">
-          <Button className="bg-red-600 hover:bg-red-700 text-white">
-            View All Recipes
+          <Button className="bg-red-600 hover:bg-red-700 text-white" asChild>
+            <Link to="/categories">View All Recipes</Link>
           </Button>
         </div>
       </div>
