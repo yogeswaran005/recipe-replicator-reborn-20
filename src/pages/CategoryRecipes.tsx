@@ -27,9 +27,29 @@ const CategoryRecipes = () => {
   // Get category title based on slug
   const categoryTitle = categoryTitles[slug || ''] || 'Recipes';
   
-  // Filter recipes by category (using the first 5 recipes for all categories for now)
+  // Filter recipes by category (for now using first 5 recipes)
   // In a real app, you would implement actual category filtering logic
-  const categoryRecipes = recipes.slice(0, 5);
+  const categoryRecipes = recipes.slice(0, 5).map(recipe => {
+    // Ensure image URLs are valid and have a fallback
+    let validatedImage = recipe.image;
+    
+    // Check if URL is valid
+    if (!validatedImage || !validatedImage.startsWith('http')) {
+      // Provide category-appropriate food image fallbacks
+      const fallbackImages = [
+        'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000',  // General food
+        'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1000',  // Healthy breakfast
+        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000',  // Meal plate
+        'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1000'   // Soup/stew
+      ];
+      
+      // Use consistent fallback based on recipe ID
+      const fallbackIndex = (recipe.id % fallbackImages.length);
+      validatedImage = fallbackImages[fallbackIndex];
+    }
+    
+    return { ...recipe, image: validatedImage };
+  });
   
   return (
     <div className="min-h-screen flex flex-col">
