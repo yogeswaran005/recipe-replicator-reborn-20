@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
@@ -15,6 +15,11 @@ import { useAuth } from '@/contexts/AuthContext';
 
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
+  const location = useLocation();
+  
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
   
   return (
     <header className="bg-black text-white">
@@ -23,10 +28,32 @@ const Navbar: React.FC = () => {
           <Link to="/" className="text-2xl font-bold">FOODIE CRAFT</Link>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className="text-red-500 hover:text-red-400">Home</Link>
-          <Link to="/categories" className="text-white hover:text-gray-300">Categories</Link>
-          <Link to="/about" className="text-white hover:text-gray-300">About</Link>
-          {user && <Link to="/favorites" className="text-white hover:text-gray-300">Favorites</Link>}
+          <Link 
+            to="/" 
+            className={isActive('/') ? "text-red-500 hover:text-red-400" : "text-white hover:text-gray-300"}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/categories" 
+            className={isActive('/categories') ? "text-red-500 hover:text-red-400" : "text-white hover:text-gray-300"}
+          >
+            Categories
+          </Link>
+          <Link 
+            to="/about" 
+            className={isActive('/about') ? "text-red-500 hover:text-red-400" : "text-white hover:text-gray-300"}
+          >
+            About
+          </Link>
+          {user && (
+            <Link 
+              to="/favorites" 
+              className={isActive('/favorites') ? "text-red-500 hover:text-red-400" : "text-white hover:text-gray-300"}
+            >
+              Favorites
+            </Link>
+          )}
         </nav>
         <div className="flex items-center space-x-2">
           {!user ? (
