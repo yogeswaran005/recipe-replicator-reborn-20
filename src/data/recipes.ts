@@ -192,7 +192,7 @@ export const recipes = [
     description: 'A low-carb, protein-rich alternative to traditional pasta dishes that\'s gentle on the stomach.',
     prepTime: '15 min',
     cookTime: '20 min',
-    image: 'https://images.unsplash.com/photo-1583522862298-9bcf70e96ca4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+    image: 'https://www.google.com/imgres?q=zucchini%20noodles%20with%20turkey%20meatballs&imgurl=https%3A%2F%2Fwww.eatwell101.com%2Fwp-content%2Fuploads%2F2018%2F04%2Fturkey-meatballs-recipe.jpg&imgrefurl=https%3A%2F%2Fwww.eatwell101.com%2Fgarlic-butter-meatballs-with-lemon-zucchini-noodles&docid=jrBv8zvLMk7pxM&tbnid=XehYN_EPFTbg5M&vet=12ahUKEwiHvZXU7NKMAxXJzjQHHdqYGTIQM3oECG4QAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwiHvZXU7NKMAxXJzjQHHdqYGTIQM3oECG4QAA',
     ingredients: [
       { name: 'ground turkey', amount: '1 lb' },
       { name: 'almond flour', amount: '1/4 cup' },
