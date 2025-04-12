@@ -6,7 +6,7 @@ export const recipes = [
     description: 'A low-sugar breakfast pudding rich in fiber to help control blood sugar spikes.',
     prepTime: '5 min',
     cookTime: '0 min',
-    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+    image: 'https://www.google.com/imgres?q=cinnamon%20chia%20seed%20pudding&imgurl=https%3A%2F%2Fthedeliciousplate.com%2Fwp-content%2Fuploads%2F2021%2F02%2FCinnamon-Chia-Pudding-2.jpg&imgrefurl=https%3A%2F%2Fthedeliciousplate.com%2Fcinnamon-roll-chia-pudding%2F&docid=u5M6aZrJKcUz9M&tbnid=_YeQfefIYk7pfM&vet=12ahUKEwignbST7NKMAxXhwzgGHU14OGEQM3oECBgQAA..i&w=1500&h=1200&hcb=2&ved=2ahUKEwignbST7NKMAxXhwzgGHU14OGEQM3oECBgQAA',
     ingredients: [
       { name: 'chia seeds', amount: '3 tbsp' },
       { name: 'almond milk', amount: '1 cup' },
