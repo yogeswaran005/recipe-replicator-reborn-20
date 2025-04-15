@@ -26,7 +26,7 @@ const HealthCategories: React.FC = () => {
       id: 3,
       title: 'Ulcer Recipes',
       description: 'Gentle recipes that won\'t irritate sensitive stomachs',
-      image: 'https://www.google.com/imgres?q=ulcer%20recipes&imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Fa6%2Fec%2Ffb%2Fa6ecfb3bd278c287fc3f2e0a077a30c8.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F349803096061243668%2F&docid=yOVL1D7evLcAWM&tbnid=JWpGee2ahRUKnM&vet=12ahUKEwiQ0sW77dKMAxUnklYBHew2OkMQM3oECHEQAA..i&w=632&h=415&hcb=2&ved=2ahUKEwiQ0sW77dKMAxUnklYBHew2OkMQM3oECHEQAA',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fmariashananumbe%2Fulcer-friendly-food-recipes%2F&psig=AOvVaw2MGLfKnlZ8YHOB4KHCKyVV&ust=1744819198047000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDQqZq02owDFQAAAAAdAAAAABAE',
       showFavoriteIcon: false,
       slug: 'ulcer'
     },
@@ -50,7 +50,7 @@ const HealthCategories: React.FC = () => {
       id: 6,
       title: 'Weight Gain Recipes',
       description: 'Calorie-rich, nutritious meals for healthy weight gain',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsummeryule.com%2Fchocolate-hazelnut-granola-with-raspberries%2F&psig=AOvVaw3O8BMqeHiinddvVSdWjhqd&ust=1744559779152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjBhOnt0owDFQAAAAAdAAAAABAE',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkaynutrition.com%2Ftips-for-healthy-weight-gain%2F&psig=AOvVaw2VedUTADAGhkYDm3Ho6xZ8&ust=1744819119184000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODUuPez2owDFQAAAAAdAAAAABAE',
       showFavoriteIcon: false,
       slug: 'weight-gain'
     },
