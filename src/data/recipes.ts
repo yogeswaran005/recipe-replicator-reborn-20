@@ -156,7 +156,7 @@ export const recipes = [
     description: 'A delicious smoothie packed with potassium to help regulate blood pressure naturally.',
     prepTime: '5 min',
     cookTime: '0 min',
-    image: 'https://images.unsplash.com/photo-1553530666-ba11a90bb0b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80',
+    image: 'https://www.google.com/imgres?q=Potassium-Rich%20Banana%20Berry%20Smoothie&imgurl=https%3A%2F%2Fwww.nutritiousdeliciousness.com%2Fwp-content%2Fuploads%2F2024%2F04%2FStrawberry-Banana-Smoothie-Bowl1-1.jpg&imgrefurl=https%3A%2F%2Fwww.nutritiousdeliciousness.com%2Fstrawberry-banana-smoothie-bowl%2F&docid=zNisYWHot1W3BM&tbnid=WLBLGiExs-OAeM&vet=12ahUKEwipvf6lstqMAxVWkK8BHZGjHXoQM3oECGYQAA..i&w=1200&h=1670&hcb=2&ved=2ahUKEwipvf6lstqMAxVWkK8BHZGjHXoQM3oECGYQAA',
     ingredients: [
       { name: 'ripe banana', amount: '1' },
       { name: 'frozen mixed berries', amount: '1 cup' },
@@ -192,7 +192,7 @@ export const recipes = [
     description: 'A low-carb, protein-rich alternative to traditional pasta dishes that\'s gentle on the stomach.',
     prepTime: '15 min',
     cookTime: '20 min',
-    image: 'https://www.google.com/imgres?q=zucchini%20noodles%20with%20turkey%20meatballs&imgurl=https%3A%2F%2Fwww.eatwell101.com%2Fwp-content%2Fuploads%2F2018%2F04%2Fturkey-meatballs-recipe.jpg&imgrefurl=https%3A%2F%2Fwww.eatwell101.com%2Fgarlic-butter-meatballs-with-lemon-zucchini-noodles&docid=jrBv8zvLMk7pxM&tbnid=XehYN_EPFTbg5M&vet=12ahUKEwiHvZXU7NKMAxXJzjQHHdqYGTIQM3oECG4QAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwiHvZXU7NKMAxXJzjQHHdqYGTIQM3oECG4QAA',
+    image: 'https://www.google.com/imgres?q=Zucchini%20Noodles%20with%20Turkey%20Meatballs&imgurl=https%3A%2F%2Fwww.eatwell101.com%2Fwp-content%2Fuploads%2F2018%2F04%2Fturkey-meatballs-recipe.jpg&imgrefurl=https%3A%2F%2Fwww.eatwell101.com%2Fgarlic-butter-meatballs-with-lemon-zucchini-noodles&docid=jrBv8zvLMk7pxM&tbnid=XehYN_EPFTbg5M&vet=12ahUKEwji0_3EstqMAxWHj68BHcN3KjQQM3oECBwQAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwji0_3EstqMAxWHj68BHcN3KjQQM3oECBwQAA',
     ingredients: [
       { name: 'ground turkey', amount: '1 lb' },
       { name: 'almond flour', amount: '1/4 cup' },
